@@ -1,0 +1,21 @@
+<h1>Sign Up</h1>
+
+<form method="POST" action="/auth/signup">
+
+   <label>
+       Username:
+       <input name="username" required value="" />
+   </label>
+
+   <label>
+       Password:
+       <input type="password" name="password" required />
+   </label>
+
+ <button type="submit">Let's go!</button>
+
+</form>
+
+<% if (typeof errorMessage !== 'undefined') { %>
+    <p style="color: rgb(55, 0, 255)"><%= errorMessage %></p>
+    <% } %>
